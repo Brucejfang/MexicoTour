@@ -75,11 +75,11 @@ export default function App() {
           position: "absolute", inset: 0,
           backgroundImage: `url(${FLOWER_DOOR})`,
           backgroundSize: "cover", backgroundPosition: "center",
-          filter: "brightness(0.55) saturate(1.4)",
+          filter: "brightness(0.85) saturate(1.4)",
         }} />
         <div style={{
           position: "absolute", inset: 0,
-          background: "linear-gradient(160deg, rgba(254,247,243,0.72) 0%, rgba(250,238,230,0.45) 50%, rgba(254,247,243,0.8) 100%)",
+          background: "linear-gradient(160deg, rgba(254,247,243,0.25) 0%, rgba(250,238,230,0.12) 50%, rgba(254,247,243,0.3) 100%)",
         }} />
       </div>
 
@@ -96,11 +96,11 @@ export default function App() {
             position: "absolute", inset: 0,
             backgroundImage: `url(${FLOWER_FIELD})`,
             backgroundSize: "cover", backgroundPosition: "center 40%",
-            filter: "brightness(0.55) saturate(1.2)",
+            filter: "brightness(0.85) saturate(1.2)",
           }} />
           <div style={{
             position: "absolute", inset: 0,
-            background: "linear-gradient(to bottom, rgba(254,247,243,0.55) 0%, rgba(250,238,230,0.3) 45%, rgba(254,247,243,0.8) 100%)",
+            background: "linear-gradient(to bottom, rgba(254,247,243,0.2) 0%, rgba(250,238,230,0.1) 45%, rgba(254,247,243,0.35) 100%)",
           }} />
 
           <div className="relative z-10" style={{ maxWidth: 680, margin: "0 auto" }}>
@@ -109,9 +109,8 @@ export default function App() {
             <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0}
               style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
-                background: "rgba(255,255,255,0.55)",
-                border: "1px solid rgba(200,140,150,0.4)",
-                backdropFilter: "blur(12px)",
+                background: "rgba(255,255,255,0.85)",
+                border: "1px solid rgba(200,140,150,0.5)",
                 borderRadius: 999, padding: "7px 18px",
                 marginBottom: "2rem",
               }}>
@@ -180,11 +179,11 @@ export default function App() {
             position: "absolute", inset: 0,
             backgroundImage: `url(${MEXICO_ST})`,
             backgroundSize: "cover", backgroundPosition: "center 60%",
-            filter: "brightness(0.55) saturate(1.3)",
+            filter: "brightness(0.85) saturate(1.3)",
           }} />
           <div style={{
             position: "absolute", inset: 0,
-            background: "linear-gradient(to right, rgba(254,247,243,0.8), rgba(250,238,230,0.4), rgba(254,247,243,0.8))",
+            background: "linear-gradient(to right, rgba(254,247,243,0.3), rgba(250,238,230,0.12), rgba(254,247,243,0.3))",
           }} />
 
           <div className="relative z-10 flex flex-col items-center justify-center text-center px-8"
@@ -253,11 +252,11 @@ export default function App() {
             position: "absolute", inset: 0,
             backgroundImage: `url(${SUNLIGHT})`,
             backgroundSize: "cover", backgroundPosition: "center",
-            filter: "brightness(0.55) saturate(1.2)",
+            filter: "brightness(0.85) saturate(1.2)",
           }} />
           <div style={{
             position: "absolute", inset: 0,
-            background: "linear-gradient(to bottom, rgba(254,247,243,0.7), rgba(250,238,230,0.35), rgba(254,247,243,0.78))",
+            background: "linear-gradient(to bottom, rgba(254,247,243,0.25), rgba(250,238,230,0.1), rgba(254,247,243,0.3))",
           }} />
 
           <div className="relative z-10 text-center" style={{ maxWidth: 640, margin: "0 auto" }}>
@@ -279,9 +278,8 @@ export default function App() {
             {/* Card 1 */}
             <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0.2}
               style={{
-                background: "rgba(255,255,255,0.55)",
-                border: "1px solid rgba(200,140,150,0.35)",
-                backdropFilter: "blur(16px)",
+                background: "rgba(255,255,255,0.82)",
+                border: "1px solid rgba(200,140,150,0.4)",
                 borderRadius: 22, padding: "2.4rem 2rem",
                 marginBottom: "1.4rem",
               }}>
@@ -308,9 +306,8 @@ export default function App() {
             {/* Card 2 */}
             <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0.35}
               style={{
-                background: "rgba(255,255,255,0.55)",
-                border: "1px solid rgba(200,140,150,0.35)",
-                backdropFilter: "blur(16px)",
+                background: "rgba(255,255,255,0.82)",
+                border: "1px solid rgba(200,140,150,0.4)",
                 borderRadius: 22, padding: "2.4rem 2rem",
                 marginBottom: "2.8rem",
               }}>
