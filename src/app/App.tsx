@@ -3,10 +3,10 @@ import { motion } from "motion/react";
 import { PhotoBall } from "./components/PhotoBall";
 
 // ── Images ────────────────────────────────────────────────────────────────────
-const FLOWER_DOOR  = "https://images.unsplash.com/photo-1750967613572-7a4dd370378b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920";
-const MEXICO_ST    = "https://images.unsplash.com/photo-1628618402733-88682d367d28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920";
-const FLOWER_FIELD = "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920";
-const SUNLIGHT     = "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920";
+const FLOWER_DOOR  = "./bg/flower_door.webp";
+const MEXICO_ST    = "./bg/mexico_st.webp";
+const FLOWER_FIELD = "./bg/flower_field.webp";
+const SUNLIGHT     = "./bg/sunlight.webp";
 
 // ── Floating petals ───────────────────────────────────────────────────────────
 const PETALS = ["🌸","🌺","🌼","🌹","🌷","💕","✨","🌻","💫","🏵️"];
