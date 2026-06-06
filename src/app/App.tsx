@@ -5,8 +5,8 @@ import { PhotoBall } from "./components/PhotoBall";
 // ── Images ────────────────────────────────────────────────────────────────────
 const FLOWER_DOOR  = "https://images.unsplash.com/photo-1750967613572-7a4dd370378b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920";
 const MEXICO_ST    = "https://images.unsplash.com/photo-1628618402733-88682d367d28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920";
-const COUPLE_KISS  = "https://images.unsplash.com/photo-1650658765299-c1470b7d9945?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080";
-const SILHOUETTE   = "https://images.unsplash.com/photo-1591969851586-adbbd4accf81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080";
+const FLOWER_FIELD = "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920";
+const SUNLIGHT     = "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920";
 
 // ── Floating petals ───────────────────────────────────────────────────────────
 const PETALS = ["🌸","🌺","🌼","🌹","🌷","💕","✨","🌻","💫","🏵️"];
@@ -67,7 +67,7 @@ function Divider() {
 // ─────────────────────────────────────────────────────────────────────────────
 export default function App() {
   return (
-    <div style={{ minHeight: "100vh", background: "#120008", position: "relative", overflowX: "hidden" }}>
+    <div style={{ minHeight: "100vh", background: "#fef7f3", position: "relative", overflowX: "hidden" }}>
 
       {/* Fixed flower bg */}
       <div className="fixed inset-0" style={{ zIndex: 0 }}>
@@ -75,11 +75,11 @@ export default function App() {
           position: "absolute", inset: 0,
           backgroundImage: `url(${FLOWER_DOOR})`,
           backgroundSize: "cover", backgroundPosition: "center",
-          filter: "brightness(0.22) saturate(1.8)",
+          filter: "brightness(0.55) saturate(1.4)",
         }} />
         <div style={{
           position: "absolute", inset: 0,
-          background: "linear-gradient(160deg, rgba(18,0,8,0.78) 0%, rgba(40,5,20,0.5) 50%, rgba(18,0,8,0.82) 100%)",
+          background: "linear-gradient(160deg, rgba(254,247,243,0.72) 0%, rgba(250,238,230,0.45) 50%, rgba(254,247,243,0.8) 100%)",
         }} />
       </div>
 
@@ -91,16 +91,16 @@ export default function App() {
         <section className="relative flex flex-col items-center justify-center text-center"
           style={{ minHeight: "100vh", padding: "80px 24px 60px" }}>
 
-          {/* Background: sunset couple silhouette */}
+          {/* Background: bright flower field */}
           <div style={{
             position: "absolute", inset: 0,
-            backgroundImage: `url(${COUPLE_KISS})`,
+            backgroundImage: `url(${FLOWER_FIELD})`,
             backgroundSize: "cover", backgroundPosition: "center 40%",
-            filter: "brightness(0.2) saturate(1.4)",
+            filter: "brightness(0.55) saturate(1.2)",
           }} />
           <div style={{
             position: "absolute", inset: 0,
-            background: "linear-gradient(to bottom, rgba(18,0,8,0.6) 0%, rgba(40,5,20,0.35) 45%, rgba(18,0,8,0.85) 100%)",
+            background: "linear-gradient(to bottom, rgba(254,247,243,0.55) 0%, rgba(250,238,230,0.3) 45%, rgba(254,247,243,0.8) 100%)",
           }} />
 
           <div className="relative z-10" style={{ maxWidth: 680, margin: "0 auto" }}>
@@ -109,8 +109,8 @@ export default function App() {
             <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0}
               style={{
                 display: "inline-flex", alignItems: "center", gap: 8,
-                background: "rgba(255,255,255,0.08)",
-                border: "1px solid rgba(255,160,160,0.2)",
+                background: "rgba(255,255,255,0.55)",
+                border: "1px solid rgba(200,140,150,0.4)",
                 backdropFilter: "blur(12px)",
                 borderRadius: 999, padding: "7px 18px",
                 marginBottom: "2rem",
@@ -118,7 +118,7 @@ export default function App() {
               <span style={{ fontSize: 16 }}>📍</span>
               <span style={{
                 fontFamily: "'Lato', sans-serif", fontSize: "0.78rem",
-                letterSpacing: "0.14em", color: "rgba(255,200,200,0.75)",
+                letterSpacing: "0.14em", color: "rgba(100,50,55,0.8)",
                 textTransform: "uppercase",
               }}>México · World Cup 2026</span>
             </motion.div>
@@ -128,7 +128,7 @@ export default function App() {
               style={{
                 fontFamily: "'Great Vibes', cursive",
                 fontSize: "clamp(1.8rem,5vw,2.8rem)",
-                color: "#ffb3c6",
+                color: "#d4687c",
                 marginBottom: "0.3em",
               }}>
               墨西哥出差，一路顺风
@@ -139,17 +139,17 @@ export default function App() {
               style={{
                 fontFamily: "'Playfair Display', serif",
                 fontSize: "clamp(2.6rem,9vw,5.8rem)",
-                fontWeight: 700, color: "#fff",
+                fontWeight: 700, color: "#3d1a1a",
                 lineHeight: 1.1,
-                textShadow: "0 4px 50px rgba(255,120,150,0.3)",
+                textShadow: "0 2px 30px rgba(200,100,120,0.15)",
                 marginBottom: "0.6em",
-              }}>愿你在异乡<br /><span style={{ color: "#ff6b9d" }}>一切安好</span></motion.h1>
+              }}>愿你在异乡<br /><span style={{ color: "#e8536c" }}>一切安好</span></motion.h1>
 
             <motion.p variants={fadeUp} initial="hidden" animate="visible" custom={0.52}
               style={{
                 fontFamily: "'Lato', sans-serif", fontWeight: 300,
                 fontSize: "clamp(1rem,2.5vw,1.15rem)",
-                color: "rgba(255,210,218,0.65)",
+                color: "rgba(90,40,45,0.68)",
                 lineHeight: 1.9, marginBottom: "2.8rem",
               }}>
               鲜花盛开的季节，送上最真诚的祝福，<br />
@@ -180,11 +180,11 @@ export default function App() {
             position: "absolute", inset: 0,
             backgroundImage: `url(${MEXICO_ST})`,
             backgroundSize: "cover", backgroundPosition: "center 60%",
-            filter: "brightness(0.25) saturate(1.5)",
+            filter: "brightness(0.55) saturate(1.3)",
           }} />
           <div style={{
             position: "absolute", inset: 0,
-            background: "linear-gradient(to right, rgba(18,0,8,0.85), rgba(60,5,25,0.45), rgba(18,0,8,0.85))",
+            background: "linear-gradient(to right, rgba(254,247,243,0.8), rgba(250,238,230,0.4), rgba(254,247,243,0.8))",
           }} />
 
           <div className="relative z-10 flex flex-col items-center justify-center text-center px-8"
@@ -197,9 +197,9 @@ export default function App() {
               style={{
                 fontFamily: "'Playfair Display', serif", fontStyle: "italic",
                 fontSize: "clamp(1.2rem,3.5vw,1.9rem)",
-                color: "#fff",
+                color: "#3d1a1a",
                 lineHeight: 1.7,
-                textShadow: "0 2px 20px rgba(255,100,130,0.25)",
+                textShadow: "0 1px 15px rgba(200,100,120,0.15)",
                 maxWidth: 600,
               }}>
               "墨西哥的阳光与鲜花，<br />
@@ -208,7 +208,7 @@ export default function App() {
             <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0.3}
               style={{
                 fontFamily: "'Lato', sans-serif", fontWeight: 300,
-                fontSize: "0.8rem", color: "rgba(255,180,180,0.4)",
+                fontSize: "0.8rem", color: "rgba(130,70,75,0.45)",
                 letterSpacing: "0.12em", marginTop: "1.2rem",
               }}>
               CIUDAD DE MÉXICO · 2026
@@ -220,21 +220,21 @@ export default function App() {
         <section style={{ padding: "80px 0 50px" }}>
           <div className="text-center px-6 mb-0">
             <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
-              style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(1.6rem,4vw,2.4rem)", color: "#ffb3c6" }}>
+              style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(1.6rem,4vw,2.4rem)", color: "#d4687c" }}>
               花与美景，定格此刻
             </motion.p>
             <motion.h2 variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0.15}
               style={{
                 fontFamily: "'Playfair Display', serif",
                 fontSize: "clamp(1.8rem,5vw,3rem)",
-                fontWeight: 700, color: "#fff",
+                fontWeight: 700, color: "#3d1a1a",
                 marginTop: "0.2em",
-                textShadow: "0 0 30px rgba(255,100,130,0.2)",
+                textShadow: "0 0 30px rgba(200,100,120,0.1)",
               }}>cc照片墙</motion.h2>
             <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0.28}
               style={{
                 fontFamily: "'Lato', sans-serif", fontWeight: 300,
-                fontSize: "0.9rem", color: "rgba(255,200,210,0.4)",
+                fontSize: "0.9rem", color: "rgba(130,70,75,0.4)",
                 marginTop: "0.4rem",
               }}></motion.p>
           </div>
@@ -251,13 +251,13 @@ export default function App() {
 
           <div style={{
             position: "absolute", inset: 0,
-            backgroundImage: `url(${SILHOUETTE})`,
+            backgroundImage: `url(${SUNLIGHT})`,
             backgroundSize: "cover", backgroundPosition: "center",
-            filter: "brightness(0.15) saturate(1.6)",
+            filter: "brightness(0.55) saturate(1.2)",
           }} />
           <div style={{
             position: "absolute", inset: 0,
-            background: "linear-gradient(to bottom, rgba(18,0,8,0.75), rgba(40,0,20,0.4), rgba(18,0,8,0.8))",
+            background: "linear-gradient(to bottom, rgba(254,247,243,0.7), rgba(250,238,230,0.35), rgba(254,247,243,0.78))",
           }} />
 
           <div className="relative z-10 text-center" style={{ maxWidth: 640, margin: "0 auto" }}>
@@ -270,7 +270,7 @@ export default function App() {
             <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0.1}
               style={{
                 fontFamily: "'Great Vibes', cursive",
-                fontSize: "clamp(1.8rem,5vw,2.8rem)", color: "#ffb3c6",
+                fontSize: "clamp(1.8rem,5vw,2.8rem)", color: "#d4687c",
                 marginBottom: "2.5rem",
               }}>
               送上最真诚的祝愿
@@ -279,8 +279,8 @@ export default function App() {
             {/* Card 1 */}
             <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0.2}
               style={{
-                background: "rgba(255,255,255,0.06)",
-                border: "1px solid rgba(255,150,170,0.2)",
+                background: "rgba(255,255,255,0.55)",
+                border: "1px solid rgba(200,140,150,0.35)",
                 backdropFilter: "blur(16px)",
                 borderRadius: 22, padding: "2.4rem 2rem",
                 marginBottom: "1.4rem",
@@ -289,14 +289,14 @@ export default function App() {
               <h3 style={{
                 fontFamily: "'Playfair Display', serif",
                 fontSize: "clamp(1.5rem,4vw,2rem)", fontWeight: 700,
-                color: "#fff", marginBottom: "0.8rem",
-                textShadow: "0 0 20px rgba(255,130,150,0.3)",
+                color: "#3d1a1a", marginBottom: "0.8rem",
+                textShadow: "0 0 15px rgba(200,100,120,0.12)",
               }}>
                 祝工作顺利
               </h3>
               <p style={{
                 fontFamily: "'Lato', sans-serif", fontWeight: 300,
-                fontSize: "1rem", color: "rgba(255,215,220,0.62)",
+                fontSize: "1rem", color: "rgba(90,40,45,0.65)",
                 lineHeight: 1.9,
               }}>
                 愿出差期间诸事顺利，<br />
@@ -308,8 +308,8 @@ export default function App() {
             {/* Card 2 */}
             <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0.35}
               style={{
-                background: "rgba(255,255,255,0.06)",
-                border: "1px solid rgba(255,150,170,0.2)",
+                background: "rgba(255,255,255,0.55)",
+                border: "1px solid rgba(200,140,150,0.35)",
                 backdropFilter: "blur(16px)",
                 borderRadius: 22, padding: "2.4rem 2rem",
                 marginBottom: "2.8rem",
@@ -318,14 +318,14 @@ export default function App() {
               <h3 style={{
                 fontFamily: "'Playfair Display', serif",
                 fontSize: "clamp(1.5rem,4vw,2rem)", fontWeight: 700,
-                color: "#fff", marginBottom: "0.8rem",
-                textShadow: "0 0 20px rgba(255,130,150,0.3)",
+                color: "#3d1a1a", marginBottom: "0.8rem",
+                textShadow: "0 0 15px rgba(200,100,120,0.12)",
               }}>
                 注意身体健康
               </h3>
               <p style={{
                 fontFamily: "'Lato', sans-serif", fontWeight: 300,
-                fontSize: "1rem", color: "rgba(255,215,220,0.62)",
+                fontSize: "1rem", color: "rgba(90,40,45,0.65)",
                 lineHeight: 1.9,
               }}>
                 在外出差辛苦了，<br />
@@ -339,7 +339,7 @@ export default function App() {
               style={{
                 fontFamily: "'Playfair Display', serif", fontStyle: "italic",
                 fontSize: "clamp(1.1rem,3vw,1.5rem)",
-                color: "rgba(255,180,190,0.6)",
+                color: "rgba(100,50,55,0.6)",
                 lineHeight: 1.75,
               }}>
               "愿鲜花盛开的季节，<br />
@@ -355,17 +355,17 @@ export default function App() {
 
         {/* ── FOOTER ───────────────────────────────────────────────────────── */}
         <footer style={{
-          background: "rgba(0,0,0,0.5)",
+          background: "rgba(245,235,228,0.6)",
           padding: "44px 24px",
           textAlign: "center",
-          borderTop: "1px solid rgba(255,120,150,0.1)",
+          borderTop: "1px solid rgba(200,140,150,0.2)",
         }}>
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
             <div style={{ fontSize: 26, marginBottom: "0.8rem" }}>🌸 💕 🌺</div>
-            <p style={{ fontFamily: "'Great Vibes', cursive", fontSize: "1.5rem", color: "#ffb3c6", marginBottom: "0.4rem" }}>
+            <p style={{ fontFamily: "'Great Vibes', cursive", fontSize: "1.5rem", color: "#d4687c", marginBottom: "0.4rem" }}>
               出差顺利，平安归来
             </p>
-            <p style={{ fontFamily: "'Lato', sans-serif", fontWeight: 300, fontSize: "0.72rem", color: "rgba(255,160,170,0.3)", letterSpacing: "0.1em" }}>
+            <p style={{ fontFamily: "'Lato', sans-serif", fontWeight: 300, fontSize: "0.72rem", color: "rgba(130,70,75,0.35)", letterSpacing: "0.1em" }}>
               México · 2026 · With love
             </p>
           </motion.div>
