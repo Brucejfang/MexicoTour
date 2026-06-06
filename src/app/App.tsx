@@ -151,7 +151,7 @@ export default function App() {
                 color: "rgba(90,40,45,0.68)",
                 lineHeight: 1.9, marginBottom: "2.8rem",
               }}>
-              鲜花盛开的季节，送上最真诚的祝福，<br />
+              世界杯之年，送上最真诚的祝福，<br />
               工作顺利，身体健康，平安归来。
             </motion.p>
 
