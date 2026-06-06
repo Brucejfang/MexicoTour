@@ -201,8 +201,8 @@ export default function App() {
                 textShadow: "0 1px 15px rgba(200,100,120,0.15)",
                 maxWidth: 600,
               }}>
-              "墨西哥的阳光与鲜花，<br />
-              愿为你的出差旅途添一份美好。"
+              "2026 世界杯即将在这片土地点燃，<br />
+              愿你的出差之旅与这场盛事一样精彩。"
             </motion.p>
             <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0.3}
               style={{
