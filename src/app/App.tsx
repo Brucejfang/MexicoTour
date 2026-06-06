@@ -229,7 +229,7 @@ export default function App() {
                 fontWeight: 700, color: "#3d1a1a",
                 marginTop: "0.2em",
                 textShadow: "0 0 30px rgba(200,100,120,0.1)",
-              }}>cc照片墙</motion.h2>
+              }}>花间记忆</motion.h2>
             <motion.p variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }} custom={0.28}
               style={{
                 fontFamily: "'Lato', sans-serif", fontWeight: 300,
