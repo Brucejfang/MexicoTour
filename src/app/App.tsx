@@ -151,7 +151,7 @@ export default function App() {
                 color: "rgba(90,40,45,0.68)",
                 lineHeight: 1.9, marginBottom: "2.8rem",
               }}>
-              世界杯之年，送上最真诚的祝福，<br />
+              鲜花盛开的季节，送上最真诚的祝福，<br />
               工作顺利，身体健康，平安归来。
             </motion.p>
 
@@ -198,8 +198,12 @@ export default function App() {
                 fontSize: "clamp(1.2rem,3.5vw,1.9rem)",
                 color: "#3d1a1a",
                 lineHeight: 1.7,
-                textShadow: "0 1px 15px rgba(200,100,120,0.15)",
+                textShadow: "0 2px 12px rgba(255,255,255,0.6), 0 1px 4px rgba(0,0,0,0.3)",
                 maxWidth: 600,
+                display: "inline-block",
+                background: "rgba(255,255,255,0.35)",
+                borderRadius: 16,
+                padding: "0.8em 1.4em",
               }}>
               "墨西哥的足球与鲜花，<br />
               愿为你的出差旅途添一份美好。"
