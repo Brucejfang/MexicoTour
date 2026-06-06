@@ -1,14 +1,16 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 
+const BASE = import.meta.env.BASE_URL;
+
 const PHOTOS = [
-  { url: "/photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161627_354.jpg", alt: "照片 1" },
-  { url: "/photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161709_032.jpg", alt: "照片 2" },
-  { url: "/photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161725_276.jpg", alt: "照片 3" },
-  { url: "/photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161735_206.jpg", alt: "照片 4" },
-  { url: "/photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161814_063.jpg", alt: "照片 5" },
-  { url: "/photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161840_998.jpg", alt: "照片 6" },
-  { url: "/photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161850_419.jpg", alt: "照片 7" },
-  { url: "/photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161925_470.jpg", alt: "照片 8" },
+  { url: BASE + "photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161627_354.jpg", alt: "照片 1" },
+  { url: BASE + "photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161709_032.jpg", alt: "照片 2" },
+  { url: BASE + "photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161725_276.jpg", alt: "照片 3" },
+  { url: BASE + "photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161735_206.jpg", alt: "照片 4" },
+  { url: BASE + "photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161814_063.jpg", alt: "照片 5" },
+  { url: BASE + "photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161840_998.jpg", alt: "照片 6" },
+  { url: BASE + "photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161850_419.jpg", alt: "照片 7" },
+  { url: BASE + "photos/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2026-06-06_161925_470.jpg", alt: "照片 8" },
 ];
 
 function distributeOnSphere(count: number) {
